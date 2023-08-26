@@ -22,7 +22,7 @@ const Day: FC<Tday> = ({ date, count }) => {
     return (
         <li className={styles.main_container}>
             <div className={styles.hidden_field}>
-                <span>{count===0? 'No': count} contributions</span>
+                <span>{count === 0 ? 'No' : count} contributions</span>
                 <span className={styles.text}
                 >{stingDay}, {stringMonth} {date.getDate()}, {date.getFullYear()}</span>
             </div>

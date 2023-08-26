@@ -115,7 +115,7 @@ const ContributionGraph = () => {
             <div className={styles.column_helper}>
                 <ul className={styles.month_list}>
                     {months.map((el, index) => {
-                        return (<li><p className={styles.month} key={index}>{el}</p></li>)
+                        return (<li key={index}><p className={styles.month}>{el}</p></li>)
                     })}
                 </ul>
                 <ul className={styles.graph}>

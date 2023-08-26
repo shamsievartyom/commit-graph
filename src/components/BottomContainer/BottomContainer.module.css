@@ -38,7 +38,7 @@
     left: -400%;
 }
 
-.image:hover .hidden_field {
+.image:focus .hidden_field {
     display: block;
 }
 

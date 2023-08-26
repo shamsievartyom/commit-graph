@@ -1,4 +1,4 @@
-import './App.css'
+// import './App.css'
 import ContributionGraph from '../ContributionGraph/ContributionGraph'
 
 function App() {

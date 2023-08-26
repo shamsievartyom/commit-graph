@@ -28,7 +28,7 @@
     align-items: center;
 }
 
-.main_container:hover .hidden_field {
+.main_container::selection .hidden_field {
     display: flex;
 }
 
@@ -38,21 +38,21 @@
     font-weight: 400;
 }
 
-.low_modifier{
+.low_modifier {
     background-color: #ACD5F2;
 }
 
 
-.mid_modifier{
+.mid_modifier {
     background-color: #7FA8C9;
 }
 
 
-.super_modifier{
+.super_modifier {
     background-color: #527BA0;
 }
 
 
-.extra_modifier{
+.extra_modifier {
     background-color: #254E77;
 }
