@@ -20,7 +20,7 @@ const Day: FC<Tday> = ({ date, count }) => {
 
     date.toString()
     return (
-        <div className={styles.main_container}>
+        <li className={styles.main_container}>
             <div className={styles.hidden_field}>
                 <span>{count===0? 'No': count} contributions</span>
                 <span className={styles.text}
@@ -32,7 +32,7 @@ const Day: FC<Tday> = ({ date, count }) => {
             ${(count >= 20 && count <= 29) ? styles.super_modifier : ''}
             ${(count >= 30) ? styles.extra_modifier : ''}
             `}></div>
-        </div>
+        </li>
     )
 }
 

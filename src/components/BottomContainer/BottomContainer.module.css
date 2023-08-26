@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    gap: 7px;
+    margin-top: 15px;
+}
+
+.text {
+    color: #959494;
+    font-size: 8px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.image {
+    width: 15px;
+    height: 15px;
+    position: relative;
+}
+
+.hidden_field {
+    display: none;
+    position: absolute;
+    background-color: black;
+    padding: 8px;
+    width: 120px;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    bottom: 100%;
+    left: -400%;
+}
+
+.image:hover .hidden_field {
+    display: block;
+}
+
+
+.image1 {
+    background-color: #EDEDED;
+}
+
+.image2 {
+    background-color: #ACD5F2;
+}
+
+.image3 {
+    background-color: #7FA8C9;
+}
+
+.image4 {
+    background-color: #527BA0;
+}
+
+.image5 {
+    background-color: #254E77;
+}

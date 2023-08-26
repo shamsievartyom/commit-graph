@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import styles from './ContributionGraph.module.css'
 import Day from '../Day/Day'
+import BottomContainer from '../BottomContainer/BottomContainer'
 
 type TserverData = {
     [date: string]: number
@@ -114,7 +115,7 @@ const ContributionGraph = () => {
             <div className={styles.column_helper}>
                 <ul className={styles.month_list}>
                     {months.map((el, index) => {
-                        return (<div className={styles.month} key={index}>{el}</div>)
+                        return (<li><p className={styles.month} key={index}>{el}</p></li>)
                     })}
                 </ul>
                 <ul className={styles.graph}>
@@ -123,6 +124,7 @@ const ContributionGraph = () => {
                     }
                     )}
                 </ul>
+                <BottomContainer />
             </div>
         </section>
     )
