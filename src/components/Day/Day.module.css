@@ -28,7 +28,7 @@
     align-items: center;
 }
 
-.main_container::selection .hidden_field {
+.main_container:hover .hidden_field {
     display: flex;
 }
 
