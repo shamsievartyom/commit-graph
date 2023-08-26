@@ -1,3 +1,7 @@
+.main_container {
+    position: relative;
+}
+
 .container {
     width: 15px;
     height: 15px;
@@ -7,4 +11,48 @@
     &:hover {
         border: 1px solid rgba(0, 0, 0, 0.50);
     }
+}
+
+.hidden_field {
+    display: none;
+    position: absolute;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    bottom: 100%;
+    left: -500%;
+    z-index: 1;
+    height: 42px;
+    width: 145px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_container:hover .hidden_field {
+    display: flex;
+}
+
+.text {
+    color: #7C7C7C;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.low_modifier{
+    background-color: #ACD5F2;
+}
+
+
+.mid_modifier{
+    background-color: #7FA8C9;
+}
+
+
+.super_modifier{
+    background-color: #527BA0;
+}
+
+
+.extra_modifier{
+    background-color: #254E77;
 }

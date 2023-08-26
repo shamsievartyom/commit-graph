@@ -70,6 +70,9 @@ const ContributionGraph = () => {
         else if (dayOfWeek === 6) { //суббота
             elementsToAdd = 1;
         }
+        else if (dayOfWeek === 7) { //суббота
+            elementsToAdd = 0;
+        }
 
         if (elementsToAdd > 0) {
             for (let i = 0; i < elementsToAdd; i++) {
@@ -81,7 +84,18 @@ const ContributionGraph = () => {
         }
     }
 
-    addDays()
+    addDays()//add days for full week
+
+    function addCountersFromServer() {
+        days.forEach((element) => {
+            const dateString = element.date.toISOString().split('T')[0];
+            if (serverData?.hasOwnProperty(dateString)) {
+                element.count = serverData[dateString];
+            }
+        });
+    }
+
+    addCountersFromServer()
 
     function getMonths(monthNumber: number) {
         const allMonths = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
@@ -99,8 +113,8 @@ const ContributionGraph = () => {
             </ul>
             <div className={styles.column_helper}>
                 <ul className={styles.month_list}>
-                    {months.map((el) => {
-                        return (<div className={styles.month}>{el}</div>)
+                    {months.map((el, index) => {
+                        return (<div className={styles.month} key={index}>{el}</div>)
                     })}
                 </ul>
                 <ul className={styles.graph}>
