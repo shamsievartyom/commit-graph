@@ -1,0 +1,42 @@
+.section {
+    display: flex;
+}
+
+.month_list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.month {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.week_list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+    justify-content: space-between;
+    height: 92px;
+    margin-right: 5px;
+}
+
+.week {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.column_helper {
+    display: flex;
+    flex-direction: column;
+}
+
+.graph {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 899px;
+    height: 117px;
+    gap: 2px;
+    margin-top: 5px;
+}

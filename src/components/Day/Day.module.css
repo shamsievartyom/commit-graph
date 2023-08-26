@@ -1,0 +1,10 @@
+.container {
+    width: 15px;
+    height: 15px;
+    background-color: #EDEDED;
+    box-sizing: border-box;
+
+    &:hover {
+        border: 1px solid rgba(0, 0, 0, 0.50);
+    }
+}
